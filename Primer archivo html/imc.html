@@ -22,16 +22,25 @@
 
             function calcularImc(peso, altura, lineas) {
 
-                return (peso / (altura * altura))
+                return (peso / (altura * altura));
             }
 
-            nombre = prompt("informe su nombre")
-            pesoInformado = prompt(nombre + ", informe su peso")
-            alturaInformada = prompt(nombre + ", informe su altura")
+            nombre = prompt("informe su nombre");
+            pesoInformado = prompt(nombre + ", informe su peso");
+            alturaInformada = prompt(nombre + ", informe su altura");
  
-            imcCalculado = calcularImc(pesoInformado, alturaInformada, 3)
+            imcCalculado = calcularImc(pesoInformado, alturaInformada, 3);
 
             imprimir(nombre + ", su imc calculado es: " + imcCalculado);
+
+            if(imcCalculado < 18.5){
+                imprimir(("IMC esta por debajo de lo recomendado"), 3);
+            } if(imcCalculado >= 18.5 < 25){
+                imprimir(("IMC esta dentro del intervalo normal"), 3);
+            } if(imcCalculado >= 25 > 30){
+                imprimir(("IMC considerado como sobrepeso"), 3);
+            } if(imcCalculado )
+
 
         </script>
 

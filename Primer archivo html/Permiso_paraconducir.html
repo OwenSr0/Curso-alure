@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+    <head>
+        <h1>Programa juego de adivinacion</h1>
+
+    </head>
+    <body>
+
+        <script>
+            function saltarLinea(lineas){
+                for(i = 0 ; i < lineas ; i++){
+                    document.write("<br>");
+                }
+            }
+            
+            function imprimir(frase, salto){
+                document.write(frase);
+                saltarLinea(salto);
+            }
+
+        var edad = parseInt(prompt("¿Cuál es tu edad?"));
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+        if(edad >= 18 && tieneLicencia == "S"){
+            imprimir(("Puedes conducir"), 3);
+        } else{
+            imprimir(("No puedes conducir"), 3);
+        }
+
+        </script>
+
+</body>
+</html>
