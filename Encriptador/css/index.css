@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+    background-color: #333;
+
+}
+
+header{
+    background: linear-gradient(#525252 , #333)
+
+
+
+
+}
+
+header h1{
+    display: inline-flex;
+    width: 40px;
+    justify-content: center;
+}
+
+header h2{
+    
+    display: inline-flex;
+    font-size: 24px;
+    vertical-align: super;
+}
+.titulo{
+    color: A2A2A2;
+}
