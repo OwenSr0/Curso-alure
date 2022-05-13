@@ -15,14 +15,40 @@
     <header>
 
         <div class="header">
-            <h1> <img src="./img/logo.png" alt="logo"></h1>
+            <h1 class="logo"> <img src="./img/logo.png" alt="logo"></h1>
 
             <h2 class="titulo">Encriptador web</h2>
         </div>
 
     </header>
     <main>
+        <textarea cols="70" rows="10" id="ingreso" class="input-padron" required placeholder="Ingresa el texto aqui"></textarea>
+       
 
+        <div>
+
+            <p id="warning">Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+            <input id="encriptar-b" type="submit" value="Encriptar">
+            <input id="desencriptar-b" type="submit" value="Desencriptar">
+
+        </div>
+
+        
+        <div>
+            <svg class="box"></svg>
+            <span id="texto-box">Ingresa texto example</span>
+
+         <input id="copiar-b" onclick="copiarAlPortapapeles('texto-box')" type="submit" value="Copiar">
+        </div>
     </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/Encriptador.js"></script>	
+    <script src="js/Desencriptador.js"></script>
+    <script src="js/copiar.js"></script>		
 </body>
 </html>
